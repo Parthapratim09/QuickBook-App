@@ -1,50 +1,105 @@
-# Welcome to your Expo app 👋
+📅 ReserveIt | Premium Booking App
+ReserveIt is a high-fidelity appointment booking application built with React Native. It features a modern, dark-themed UI with glassmorphism effects, smooth micro-interactions, and a seamless local authentication flow.
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+✨ Features
+🌈 Premium Gradient UI: A deep indigo and purple aesthetic using expo-linear-gradient.
 
-## Get started
+🪟 Glassmorphism: Semi-transparent cards and headers with subtle borders for a modern "Apple-style" depth.
 
-1. Install dependencies
+🧭 Floating Navigation: A detached, rounded bottom tab bar for easy thumb navigation.
 
-   ```bash
-   npm install
-   ```
+🔐 Local Auth System: Fully functional Login and Register flow powered by AsyncStorage.
 
-2. Start the app
+📊 Smart Dashboard: Categorized specialist search with real-time filtering logic.
 
-   ```bash
-   npx expo start
-   ```
+⚡ Fluid Animations: Staggered list entries and layout transitions using react-native-reanimated.
 
-In the output, you'll find options to open the app in a
+🛠️ Tech Stack
+Framework: React Native (Expo)
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+Styling: React Native Paper & Custom Styles
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+Navigation: React Navigation (Stack & Tabs)
 
-## Get a fresh project
+Animations: React Native Reanimated
 
-When you're ready, run:
+Icons: Material Community Icons
 
-```bash
-npm run reset-project
-```
+Storage: @react-native-async-storage/async-storage
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
 
-## Learn more
+Gemini said
+This README is designed to give your project a professional, "App Store" ready feel. It highlights the premium tech stack you've used (Gradients, Glassmorphism, and Reanimated) and explains how the local authentication works.
 
-To learn more about developing your project with Expo, look at the following resources:
+📅 ReserveIt | Premium Booking App
+ReserveIt is a high-fidelity appointment booking application built with React Native. It features a modern, dark-themed UI with glassmorphism effects, smooth micro-interactions, and a seamless local authentication flow.
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+✨ Features
+🌈 Premium Gradient UI: A deep indigo and purple aesthetic using expo-linear-gradient.
 
-## Join the community
+🪟 Glassmorphism: Semi-transparent cards and headers with subtle borders for a modern "Apple-style" depth.
 
-Join our community of developers creating universal apps.
+🧭 Floating Navigation: A detached, rounded bottom tab bar for easy thumb navigation.
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+🔐 Local Auth System: Fully functional Login and Register flow powered by AsyncStorage.
+
+📊 Smart Dashboard: Categorized specialist search with real-time filtering logic.
+
+⚡ Fluid Animations: Staggered list entries and layout transitions using react-native-reanimated.
+
+🛠️ Tech Stack
+Framework: React Native (Expo)
+
+Styling: React Native Paper & Custom Styles
+
+Navigation: React Navigation (Stack & Tabs)
+
+Animations: React Native Reanimated
+
+Icons: Material Community Icons
+
+Storage: @react-native-async-storage/async-storage
+
+🚀 Getting Started
+Prerequisites
+Make sure you have Node.js installed and the Expo Go app on your physical device or an emulator ready.
+
+Installation
+Clone the repository
+
+Bash
+git clone https://github.com/Parthapratim09/QuickBook-App.git
+cd QuickBook-App
+Install dependencies
+
+Bash
+npx expo install expo-linear-gradient expo-blur react-native-reanimated react-native-paper @react-navigation/native @react-navigation/native-stack @react-navigation/bottom-tabs @react-native-async-storage/async-storage react-native-safe-area-context react-native-screens
+Start the project
+
+Bash
+npx expo start
+📂 Project Structure
+Plaintext
+├── App.js                 # App Entry & Navigation Logic
+├── screens/
+│   ├── LandingScreen.js    # Welcome Screen
+│   ├── LoginScreen.js      # Local Auth Login
+│   ├── RegisterScreen.js   # Local Auth Registration
+│   ├── HomeScreen.js       # Specialist Discovery (Dashboard)
+│   ├── ProviderDetails.js  # Specialist Profile
+│   ├── BookingScreen.js    # Slot Selection & Confirmation
+│   └── AppointmentsScreen.js # User's Booked Slots
+├── components/
+│   └── ProviderCard.js     # Reusable Glassmorphism Card
+└── data/
+    └── providers.js        # Mock Data for Specialists
+
+
+🔐 How Authentication Works
+This app uses a Local Persistence Model.
+
+When you Register, your credentials (Name, Email, Password) are stringified and stored in the device's private storage using AsyncStorage under the key user_session.
+
+When you Login, the app retrieves that string, parses it back into an object, and compares the inputs.
+
+Because it is local, you must register on the specific device/emulator you are testing on before logging in.

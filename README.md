@@ -1,4 +1,4 @@
-# 📅 ReserveIt | Premium Booking App
+# 📅 QuickBook | Premium Booking App
 
 **ReserveIt** is a high-fidelity appointment booking application built with **React Native (Expo)**.
 It delivers a modern, dark-themed experience featuring **glassmorphism UI**, **smooth micro-interactions**, and a **seamless local authentication system**.

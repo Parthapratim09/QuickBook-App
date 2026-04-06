@@ -92,6 +92,10 @@ npx expo start
 
 ---
 
+🤖 Android app:
+https://expo.dev/artifacts/eas/9vyj5vXZEPLGSE5quaQFT5.apk
+
+
 ## 📂 Project Structure
 
 ```
